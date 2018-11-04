@@ -6,15 +6,14 @@
 *       
 */
 
-var chaiHttp = require('chai-http');
-var chai = require('chai');
-var assert = chai.assert;
-var server = require('../server');
+const chaiHttp = require('chai-http');
+const chai     = require('chai');
+const assert   = chai.assert;
+const server   = require('../server');
 
 chai.use(chaiHttp);
 
 suite('Functional Tests', function() {
-
   /*
   * ----[EXAMPLE TEST]----
   * Each test should completely test the response of the API end-point including response status code!
@@ -39,7 +38,6 @@ suite('Functional Tests', function() {
   */
 
   suite('Routing tests', function() {
-
     suite('POST /api/books with title => create book object/expect book object', function() {
       
       test('Test POST /api/books with title', function(done) {
@@ -72,9 +70,7 @@ suite('Functional Tests', function() {
             done();
         });
       });
-      
     });
-
 
     suite('GET /api/books => array of books', function(){
       
@@ -93,9 +89,7 @@ suite('Functional Tests', function() {
             done();
         })
       });      
-      
     });
-
 
     suite('GET /api/books/[id] => book object with [id]', function(){
 
@@ -111,7 +105,6 @@ suite('Functional Tests', function() {
         })
       });
 
-      
       test('Test GET /api/books/[id] with valid id in db',  function(done){
         chai.request(server)
           .get("/api/books/5b5f18db000a260d1a0ed294")
@@ -129,9 +122,7 @@ suite('Functional Tests', function() {
             done();
         })
       });
-      
     });
-
 
     suite('POST /api/books/[id] => add comment/expect book object with id', function(){
       
@@ -151,9 +142,6 @@ suite('Functional Tests', function() {
             done();
         });
       });
-      
     });
-
   });
-
 });
