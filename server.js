@@ -6,20 +6,22 @@ const cors              = require('cors');
 const apiRoutes         = require('./routes/api.js');
 const fccTestingRoutes  = require('./routes/fcctesting.js');
 const runner            = require('./test-runner');
-const helmet = require("helmet");
+const helmet            = require("helmet");
 
 const app = express();
 
 app.use(helmet.hidePoweredBy({setTo: 'PHP 4.2.0'}))
 app.use(helmet.noCache());
-app.use('/public', express.static(process.cwd() + '/public'));
+app.use(express.static("public"));
 app.use(cors({origin: '*'})); //USED FOR FCC TESTING PURPOSES ONLY!
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Index page (static HTML)
 app.route('/')
-   .get((req, res) => res.sendFile(process.cwd() + '/views/index.html'));
+  .get((req, res) => {
+    res.sendFile(process.cwd() + '/views/index.html')
+});
 
 //For FCC testing purposes
 fccTestingRoutes(app);
