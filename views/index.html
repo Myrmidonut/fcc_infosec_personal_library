@@ -39,7 +39,7 @@
       <form id="newBookForm">
         <h3>Add a book:</h3>
         <p><code>POST /api/books</code></p>
-        <input type="text" id="newBookTitle" name="title" placeholder="New Book Title">
+        <input type="text" id="newBookTitle" name="title" placeholder="New Book Title" required="">
         <input type="submit" value="Submit new book" id="newBook">
       </form>
       
@@ -58,7 +58,9 @@
         <h3>Book details:</h3>
         <p><code>GET /api/books/{_id}</code></p>
         <p>Select a book to see its details and comments.</p>
+        <hr>
         <h4 id="bookTitle">Title: </h4>
+        <hr>
         <h4>Comments:</h4>
         <ol id="commentsList"></ol>
         <div id="bookInterface"></div>

@@ -65,6 +65,14 @@ h3 {
   padding-left: 10px;
 }
 
+#booksList li {
+  cursor: pointer;
+}
+
+.bookItem:hover {
+  border: 1px solid black;
+}
+
 code {
   font-family: monospace;
   color: black;
@@ -133,4 +141,8 @@ input[type=submit]:hover, button:hover {
 
 ol input {
   margin-bottom: 0;
+}
+
+hr {
+  border: 1px solid white;
 }
