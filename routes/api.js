@@ -20,13 +20,13 @@ module.exports = app => {
     
     .post((req, res) => {
       const title = req.body.title;
-    
+      
       if (!req.body.title) {
         res.send("missing title");
       } else {
         MongoClient.connect(MONGODB_CONNECTION_STRING, (err, db) => {
           const collection = db.collection("books");
-
+          
           collection.insert({
             title: title,
             comments: [],
@@ -47,11 +47,11 @@ module.exports = app => {
         })
       })
     })
-
+    
   app.route('/api/books/:id')
     .get((req, res) => {
       const bookid = req.params.id;
-    
+      
       MongoClient.connect(MONGODB_CONNECTION_STRING, (err, db) => {
         const collection = db.collection("books");
         
@@ -72,7 +72,7 @@ module.exports = app => {
     .post((req, res) => {
       const bookid = req.params.id;
       const comment = req.body.comment;
-    
+      
       MongoClient.connect(MONGODB_CONNECTION_STRING, (err, db) => {
         const collection = db.collection("books");
         

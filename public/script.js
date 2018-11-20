@@ -59,7 +59,7 @@ function showBooksList(data) {
 }
 
 function clearBookDetails() {
-  bookTitle.innerHTML = "";
+  bookTitle.innerHTML = "Title:";
   commentsList.innerHTML = "";
   bookInterface.innerHTML = "";
 }
