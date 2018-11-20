@@ -21,15 +21,15 @@
       
       <h2>User stories:</h2>
       <ol class="user-stories">
-        <li>Nothing from my website will be cached in my client as a security measure.</li>
-        <li>I will see that the site is powered by 'PHP 4.2.0' even though it isn't as a security measure.</li>
+        <li>Nothing from my website will be <code>cached</code> in my client as a security measure.</li>
+        <li>I will see that the site is powered by <code>"PHP 4.2.0</code> even though it isn't as a security measure.</li>
         <li>I can <strong>POST</strong> a <code>title</code> to <code>/api/books</code> to add a <code>book</code> and returned will be the object with the <code>title</code> and a unique <code>_id</code>.</li>
         <li>I can <strong>GET</strong> <code>/api/books</code> to retrieve an <code>array</code> of all books containing <code>title</code>, <code>_id</code>, & <code>commentcount</code>.</li>
-        <li>I can <strong>GET</strong> <code>/api/books/{_id}</code> to retrieve a single object of a book containing <code>title</code>, <code>_id</code>, & an array of <code>comments</code> (empty array if no comments present).</li>
+        <li>I can <strong>GET</strong> <code>/api/books/{_id}</code> to retrieve a single object of a <code>book</code> containing <code>title</code>, <code>_id</code> and an array of <code>comments</code> (empty array if no comments present).</li>
         <li>I can <strong>POST</strong> a <code>comment</code> to <code>/api/books/{_id}</code> to add a comment to a book and returned will be the <code>books</code> object similar to <strong>GET</strong> <code>/api/books/{_id}</code>.</li>
-        <li>I can <strong>DELETE</strong> <code>/api/books/{_id}</code> to delete a book from the collection. Returned will be <code>'delete successful'</code> if successful.</li>
-        <li>If I try to request a book that doesn't exist I will get a 'no book exists' message.</li>
-        <li>I can send a <strong>DELETE</strong> request to /api/books to delete all books in the database. Returned will be 'complete delete successful' if successful.</li>
+        <li>I can <strong>DELETE</strong> <code>/api/books/{_id}</code> to delete a <code>book</code> from the collection. Returned will be <code>"delete successful"</code> if successful.</li>
+        <li>If I try to request a book that doesn't exist I will get a <code>"no book exists"</code> message.</li>
+        <li>I can send a <strong>DELETE</strong> request to <code>/api/books</code> to delete all <code>books</code> in the database. Returned will be <code>"complete delete successful"</code> if successful.</li>
         <li>All 6 functional tests required are complete and passing.</li>
       </ol>
     
