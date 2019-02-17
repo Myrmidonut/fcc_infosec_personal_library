@@ -27,7 +27,7 @@ This project is part of freeCodeCamps Information Security and Quality Assurance
 
 ## Preview Images
 ### Project Requirements:
-![Main](readme_images/personal-library-2.png)  
+![Requirements](readme_images/personal-library-2.png)  
 
 ### Main Screen:
 ![Main](readme_images/personal-library.png)
