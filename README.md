@@ -10,6 +10,11 @@ This project is part of freeCodeCamps Information Security and Quality Assurance
 
 ***
 
+## Requirements
+![Requirements](readme_images/personal-library-2.png)  
+
+***
+
 ## Behind the scenes
 ### Frontend
 * HTML5
@@ -26,8 +31,5 @@ This project is part of freeCodeCamps Information Security and Quality Assurance
 ***
 
 ## Preview Images
-### Project Requirements:
-![Requirements](readme_images/personal-library-2.png)  
-
-### Main Screen:
+### Main View:
 ![Main](readme_images/personal-library.png)
