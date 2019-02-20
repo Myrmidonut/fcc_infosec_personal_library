@@ -1,9 +1,9 @@
 # Personal Library
 
 ## Introduction
-Users can add or remove books to a public list. Individual books show users comments.  
+Users can add or remove books to a public list. Comments can be added to individual books.
 
-Main focus lies on the implementation of the backend and its feature testing.  
+Testing is done with Chai.
 
 This project is part of freeCodeCamps Information Security and Quality Assurance certificate.
 
